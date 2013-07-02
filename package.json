@@ -3,7 +3,7 @@
   , "description": "Playing about with Jasmine for js BDD."
   , "version": "0.0.1"
   , "author": "@davidcmoulton"
-
+  , "scripts": {"test": "jasmine-node spec/"}
   , "repository": {
       "type": "git"
     , "url": "https://github.com/davidcmoulton/CI-PoC"
