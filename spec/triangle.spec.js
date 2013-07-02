@@ -52,7 +52,11 @@ describe("A triangle", function () {
 
 });
 
-
+describe("A deliberately failing test", function () {
+  it("fails", function () {
+    expect(true).toBe(false);
+  });
+});
 
 (function () {
   (jasmine.getEnv()).execute();
