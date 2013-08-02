@@ -11,9 +11,6 @@
       "url": "http://davidcmoulton.mit-license.org/"
     }
   ],
-  "scripts": {
-    "test": "jasmine-node spec/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/davidcmoulton/CI-PoC"
