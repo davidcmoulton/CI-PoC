@@ -130,7 +130,7 @@ module.exports = function(grunt) {
               src: '<%= meta.src.main %>',
               options: {
                 specs: '<%= meta.src.test %>',
-                template: require('grunt-template-jasmine-istanbul'),
+                // template: require('grunt-template-jasmine-istanbul'),
                 templateOptions: {
                   coverage: '<%= meta.reports.coverage %>/coverage.json',
                   report: [
