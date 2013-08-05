@@ -15,7 +15,7 @@ before_script:
   - "gem install travis-artifacts"
 
 after_script:
-  - "travis-artifacts upload --path logs --path CI-PoC/dist:dist"
+  - "travis-artifacts upload --path logs"
 after_failure:
   - "travis-artifacts upload --path log/debug.log"
 after_success:
