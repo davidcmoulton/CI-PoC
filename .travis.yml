@@ -19,5 +19,5 @@ after_script:
 after_failure:
   - "travis-artifacts upload --path log/debug.log"
 after_success:
-  - "travis-artifacts upload --path --path dist/dist.tar.gz"
+  - "travis-artifacts upload --path dist/dist.tar.gz"
 
