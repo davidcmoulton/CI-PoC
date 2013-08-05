@@ -9,10 +9,10 @@ node_js:
 before_script:
 - gem install travis-artifacts
 after_script:
-- travis-artifacts upload --path logs
+- travis-artifacts upload --path reports/**/*
 after_failure:
 - travis-artifacts upload --path logs/debug.log
 after_success:
-- travis-artifacts upload --path dist/dist.tar.gz
+- travis-artifacts upload --path dist/**/*
 dd:
   secure: ST/E1l7w2kr/Ol83TKeXyB9DcPgQ0OtpIrLbD2gQ4+wSVltGtfcXzWWsX12VfNTKaFqE3MVji+MlLeeO5KoM2+wLjSEF+dZBWWInqHgkoRF2aOlIw4LjYki0QrIBpZlpsv9G6v028qXE5F/8VYmczejYokJeIJFQorQonSYn0wo=
