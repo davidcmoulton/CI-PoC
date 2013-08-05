@@ -260,4 +260,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['dev']);
 
+  grunt.registerTask('travis-test', ['clean', 'jsdoc:dist',  'shrink']);
 };
