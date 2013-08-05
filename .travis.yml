@@ -12,5 +12,7 @@ before_script:
 after_success:
 - travis-artifacts upload --path dist/*
 - travis-artifacts upload --path dist/**/*
-- travis-artifacts upload --path reports/*
-- travis-artifacts upload --path reports/**/*
+# - travis-artifacts upload --path reports/*
+# - travis-artifacts upload --path reports/**/*
+after_test:
+  - travis-artifacts upload --target-path CI-PoC/artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
