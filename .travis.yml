@@ -1,22 +1,18 @@
 env:
   global:
-    - "ARTIFACTS_AWS_REGION=us-east-1"
-    - "ARTIFACTS_S3_BUCKET=elife-build-artifacts"
-    - secure: HuEd59OuWaQTarn5vS55JY2nIXqBtmw5h15LuG5t4iJYsB51T4ATGBOYvjsa+mx3PB/UdzN5ew5Xny2Pr4UjSGrQ9A7e8fHlMHI3MjxZhexJ7m1OgnM92ex6IXQyh/DYMNjybj0GrAwv36Yxzw1n93BO8lHzejU0ku7m6Q22Wdo=
-    - secure: CS81Xw4WNrdsM858Xwp4TkDWAKihCkNr0FEfzpVKlrxXmi7ShP4bXB8GS2+fHzgeDKeqadLGdDpRO3+n2X76TBNNMntLgISmPMcTkyA5CVyXfyhG0A/26sTINMkuemixnVGeXI/RCNQKDNApUqAVAdJKyjmaY9yO3iYuxEyT9Ug=
-
+  - ARTIFACTS_AWS_REGION=us-east-1
+  - ARTIFACTS_S3_BUCKET=elife-build-artifacts
+  - secure: ONA9GeQI0/X7kwPR1TJawp2K+QOacrAcLI2whLzM5VK+gqx8S74I0jTD+zYLs9WefyQWN9AeBbAi7neAe/SZULSwzY1OxeAy6rEpKmRlti0sxX1ZsIxCS/ybDmIjpyYW5E+2thCUSaOnnLkeJFPbWyKKmf/vYp3EVWjfWWDCyUw=
 language: node_js
-
 node_js:
-  - '0.11'
-
+- '0.11'
 before_script:
-  - "gem install travis-artifacts"
-
+- gem install travis-artifacts
 after_script:
-  - "travis-artifacts upload --path logs"
+- travis-artifacts upload --path logs
 after_failure:
-  - "travis-artifacts upload --path logs/debug.log"
+- travis-artifacts upload --path logs/debug.log
 after_success:
-  - "travis-artifacts upload --path dist/dist.tar.gz"
-
+- travis-artifacts upload --path dist/dist.tar.gz
+dd:
+  secure: ST/E1l7w2kr/Ol83TKeXyB9DcPgQ0OtpIrLbD2gQ4+wSVltGtfcXzWWsX12VfNTKaFqE3MVji+MlLeeO5KoM2+wLjSEF+dZBWWInqHgkoRF2aOlIw4LjYki0QrIBpZlpsv9G6v028qXE5F/8VYmczejYokJeIJFQorQonSYn0wo=
