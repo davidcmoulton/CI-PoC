@@ -11,7 +11,5 @@ before_script:
 - gem install travis-artifacts
 after_script:
 - travis-artifacts upload --path reports/**/*
-after_failure:
-- travis-artifacts upload --path logs/debug.log
 after_success:
 - travis-artifacts upload --path dist/**/*
