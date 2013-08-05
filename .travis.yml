@@ -10,5 +10,7 @@ node_js:
 before_script:
 - gem install travis-artifacts
 after_success:
+- travis-artifacts upload --path dist/*
 - travis-artifacts upload --path dist/**/*
+- travis-artifacts upload --path reports/*
 - travis-artifacts upload --path reports/**/*
