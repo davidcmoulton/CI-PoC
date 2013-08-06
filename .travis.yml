@@ -1,18 +1,5 @@
-env:
-  global:
-  - ARTIFACTS_AWS_REGION=us-east-1
-  - ARTIFACTS_S3_BUCKET=elife-build-artifacts
-  - secure: ONA9GeQI0/X7kwPR1TJawp2K+QOacrAcLI2whLzM5VK+gqx8S74I0jTD+zYLs9WefyQWN9AeBbAi7neAe/SZULSwzY1OxeAy6rEpKmRlti0sxX1ZsIxCS/ybDmIjpyYW5E+2thCUSaOnnLkeJFPbWyKKmf/vYp3EVWjfWWDCyUw=
-  - secure: ST/E1l7w2kr/Ol83TKeXyB9DcPgQ0OtpIrLbD2gQ4+wSVltGtfcXzWWsX12VfNTKaFqE3MVji+MlLeeO5KoM2+wLjSEF+dZBWWInqHgkoRF2aOlIw4LjYki0QrIBpZlpsv9G6v028qXE5F/8VYmczejYokJeIJFQorQonSYn0wo=
-language: node_js
-node_js:
-- '0.11'
-before_script:
-- gem install travis-artifacts
-after_success:
-- travis-artifacts upload --path dist/*
-- travis-artifacts upload --path dist/**/*
-# - travis-artifacts upload --path reports/*
-# - travis-artifacts upload --path reports/**/*
-after_test:
-  - travis-artifacts upload --target-path CI-PoC/artifacts/$TRAVIS_BUILD_ID/$TRAVIS_JOB_ID
+telist
+branches:
+  only:
+    - master
+    - stable
