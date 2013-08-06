@@ -1,6 +1,6 @@
 {
   "name": "CI-PoC",
-  "description": "Playing about with Jasmine for js BDD.",
+  "description": "Playing about with CI proofs of concept, (and Jasmine for js BDD.)",
   "version": "0.0.1",
   "author": {
     "name": "davidcmoulton"
