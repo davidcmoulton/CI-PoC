@@ -1,2 +1,4 @@
-node_js:
-- '0.11'
+#whitelist
+branches:
+  only:
+      - travis-testing
