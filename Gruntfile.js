@@ -130,7 +130,7 @@ module.exports = function(grunt) {
               src: '<%= meta.src.main %>',
               options: {
                 specs: '<%= meta.src.test %>',
-                // template: require('grunt-template-jasmine-istanbul'),
+                template: require('grunt-template-jasmine-istanbul'),
                 templateOptions: {
                   coverage: '<%= meta.reports.coverage %>/coverage.json',
                   report: [
@@ -233,14 +233,14 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
- //  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
- // grunt.loadNpmTasks('grunt-contrib-jasmine');
- // grunt.loadNpmTasks('grunt-jsdoc');
-//  grunt.loadNpmTasks('grunt-complexity');
-//  grunt.loadNpmTasks('grunt-plato');
-//  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-jsdoc');
+  grunt.loadNpmTasks('grunt-complexity');
+  grunt.loadNpmTasks('grunt-plato');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Define tasks (make sure there's always a 'default' task, run when grunt is invoked
   //                with no arguments).
