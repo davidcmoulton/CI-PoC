@@ -16,7 +16,7 @@
     "url": "https://github.com/davidcmoulton/CI-PoC"
   },
   "scripts": {
-    "test": "grunt travis-test"
+    "test": "grunt build-distro"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
