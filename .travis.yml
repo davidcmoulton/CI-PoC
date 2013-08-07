@@ -10,8 +10,8 @@ node_js:
 before_script:
 - gem install travis-artifacts
 after_success:
-- tar -czvf artifacts.tgz dist/ reports/
-- travis-artifacts upload --path artifacts.tgz
+- tar -czvf artifacts.tar.gz dist/ reports/
+- travis-artifacts upload --path artifacts.tar.gz
 #- travis-artifacts upload --path dist/*
 #- travis-artifacts upload --path reports/*
 #- travis-artifacts upload --path reports/**
