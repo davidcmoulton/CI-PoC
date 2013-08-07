@@ -257,7 +257,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', ['test', 'watch']);
   grunt.registerTask('dev-with-doc', ['test', 'jsdoc:dev', 'watch']);
   grunt.registerTask('build-distro', ['clean', 'test-with-plato-reports', 'jsdoc:dist', 'shrink']);
-
   grunt.registerTask('default', ['dev']);
 
   grunt.registerTask('travis-test', ['clean', 'shrink']);
