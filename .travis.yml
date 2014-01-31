@@ -2,3 +2,8 @@
 branches:
   only:
     - travis-testing
+
+notifications:
+  webhooks:
+    urls:
+      - http://api.statsmix.com/api/v2/stats?api_key=4d7fd2a3475cedef15de&value=1&metric_id=14122
