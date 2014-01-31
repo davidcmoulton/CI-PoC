@@ -2,6 +2,7 @@
 branches:
   only:
     - travis-testing
+    - chartmix
 
 notifications:
   webhooks:
