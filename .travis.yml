@@ -1,4 +1,11 @@
 #whitelist
 branches:
   only:
-      - travis-testing
+    - travis-testing
+    - dash
+
+notifications:
+  webhooks:
+      urls:
+        - http://cryptic-journey-5487.herokuapp.com/geckoboard/travisci/ 
+
