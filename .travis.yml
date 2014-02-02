@@ -1,3 +1,13 @@
+#whitelist
+branches:
+  only:
+    - travis-testing
+    - dash
+
+notifications:
+  webhooks:
+      urls:
+        - http://cryptic-journey-5487.herokuapp.com/geckoboard/travisci/
 env:
   global:
   - ARTIFACTS_AWS_REGION=us-east-1
