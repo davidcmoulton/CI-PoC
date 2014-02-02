@@ -2,10 +2,11 @@
 branches:
   only:
     - travis-testing
-    - dash
+    - dash-pass
+    - dash-fail
 
 notifications:
   webhooks:
       urls:
-        - http://cryptic-journey-5487.herokuapp.com/geckoboard/travisci/ 
+        - http://cryptic-journey-5487.herokuapp.com/geckoboard/travisci/
 
