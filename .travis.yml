@@ -10,3 +10,6 @@ notifications:
       urls:
         - http://cryptic-journey-5487.herokuapp.com/geckoboard/travisci/
 
+language: node_js
+node_js:
+- '0.11'
