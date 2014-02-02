@@ -2,4 +2,5 @@
 branches:
   only:
     - travis-testing
-    - dash
+    - dash-pass
+    - dash-fail
