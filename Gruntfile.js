@@ -21,18 +21,7 @@ module.exports = function(grunt) {
         // reflexive pattern
         me: 'Gruntfile.js',
         // returns array of all above patterns
-        all: (function () {
-          var self = this,
-              props = [],
-              prop;
-          
-          for (prop in self) {
-            if (self.hasOwnProperty(prop)) {
-              props.push(prop);
-            }
-          }
-          return props;
-        }())
+        all: ['<%= meta.src.main %>', '<%= meta.src.test %>', '<%= meta.src.me %>']
       },
 
       dist: {
